@@ -1,0 +1,11 @@
+.main {
+  &__container {
+    display: flex;
+  }
+  &__column {
+    flex-basis: 50%;
+    @media only screen and (max-width: 808px) {
+      flex-basis: auto;
+    }
+  }
+}

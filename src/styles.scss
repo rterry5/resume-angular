@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans|Raleway&display=swap");
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+:root {
+  --dark: #020511;
+  --dark-blue: #13235c;
+  --medium-blue: #3f5efb;
+  --light-blue: #08aeea;
+  --aqua-blue: #0ccf9f;
+  --light-pink: #e0b6f5;
+  --hot-pink: #fc466b;
+  --white: #e9e9e9;
+  --gray: #656565;
+  --light-gray: #b1b1b1;
+  --dark-gray: #313131;
+}
+
+* {
+  box-sizing: border-box;
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 4em;
+    color: var(--dark-gray);
+    margin: 0;
+  }
+  h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+    color: var(--dark-gray);
+  }
+
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    color: var(--dark-gray);
+  }
+
+  h4 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    color: var(--dark-gray);
+  }
+
+  p {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.7;
+    color: var(--gray);
+    font-size: 1em;
+  }
+  .light-heading {
+    color: var(--white);
+  }
+
+  .light {
+    color: var(--light-gray);
+  }
+}
+
+.section {
+  display: flex;
+  padding: 5em 0;
+  margin: auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.column {
+  padding: 0 2em;
+}
+
+.row-column {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 808px) {
+    flex-wrap: wrap;
+  }
+}
+
+.skill-icons {
+  display: flex;
+  width: 35%;
+  margin-right: auto;
+  justify-content: space-between;
+  ion-icon {
+    color: var(--medium-blue);
+    font-size: 2em;
+  }
+}

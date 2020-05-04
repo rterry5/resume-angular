@@ -1,0 +1,52 @@
+.header {
+  background-image: url("https://github.com/rterry5/portfolio/blob/master/images/mug-camera-computer.jpg?raw=true");
+  min-height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  @media only screen and (max-width: 808px) {
+    min-height: 40vh;
+  }
+  &__container {
+    width: 100%;
+  }
+  .button {
+    box-sizing: content-box;
+    cursor: pointer;
+    margin: 0 auto;
+    border: 2px solid var(--medium-blue);
+    border-radius: 40px;
+    font-size: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    height: 3em;
+    width: 225px;
+    color: var(--medium-blue);
+    text-align: center;
+    text-overflow: clip;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0);
+    transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),
+      color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0),
+      border-width 0.3s cubic-bezier(0, 0, 0, 0),
+      border-color 0.3s cubic-bezier(0, 0, 0, 0);
+    &:active {
+      border: 2px solid var(--medium-blue);
+      background: var(--medium-blue);
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      transition: none;
+    }
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      background: var(--medium-blue);
+    }
+  }
+  &__content {
+    font-size: 1.25em;
+  }
+}
