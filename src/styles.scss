@@ -7,7 +7,7 @@
 :root {
   --dark: #020511;
   --dark-blue: #13235c;
-  --medium-blue: #3f5efb;
+  --medium-blue: #2575fc;
   --light-blue: #08aeea;
   --aqua-blue: #0ccf9f;
   --light-pink: #e0b6f5;
@@ -96,4 +96,13 @@
     color: var(--medium-blue);
     font-size: 2em;
   }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
