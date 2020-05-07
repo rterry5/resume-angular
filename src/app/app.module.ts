@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -49,6 +50,7 @@ import { AboutContentComponent } from './components/about/about/about-content/ab
     BrowserModule,
     FormsModule,
     IonicModule.forRoot(),
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatInputModule,
