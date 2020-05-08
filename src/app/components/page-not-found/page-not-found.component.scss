@@ -1,0 +1,31 @@
+.column {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.button {
+  border-radius: 0;
+  border: 2px solid var(--hot-pink);
+  color: var(--hot-pink);
+  &:active {
+    border: 2px solid var(--hot-pink);
+    background: var(--hot-pink);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+  }
+  &:hover {
+    background: var(--hot-pink);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+ion-icon {
+  color: var(--hot-pink);
+  font-size: 6em;
+}
+
+h1 {
+  font-size: 8em;
+}

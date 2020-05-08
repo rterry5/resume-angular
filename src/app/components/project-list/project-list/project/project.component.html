@@ -1,0 +1,30 @@
+<mat-card class="project" *ngFor="let project of projects">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{project.title}}</mat-card-title>
+    <mat-card-subtitle>{{project.subtitle}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{project.imagePath}}" alt="Photo of a Cat project" class="mat-card-image">
+  <mat-card-content>
+    <p>
+      {{project.description}}
+    </p>
+  </mat-card-content>
+  <a href="{{project.url}}" target="_blank">
+    <button class="button">
+      Check it out
+    </button>
+  </a>
+</mat-card>
+<section class="project section">
+  <div class="project__container container">
+    <div class="project__row">
+      <div class="project__row-column row-column">
+        <div class="project__column column">
+          <h2>More coming soon!</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

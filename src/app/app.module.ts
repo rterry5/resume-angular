@@ -14,8 +14,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list'
 import { AboutComponent } from './components/about/about/about.component';
-import { ProjectsComponent } from './components/projects/projects/projects.component';
-import { ProjectComponent } from './components/projects/projects/project/project.component';
+import { ProjectComponent } from './components/project-list/project-list/project/project.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -28,6 +27,7 @@ import { HomepageComponent } from './components/homepage/homepage/homepage.compo
 import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutContentComponent } from './components/about/about/about-content/about-content.component';
+import { ProjectListComponent } from './components/project-list/project-list/project-list.component';
 
 @NgModule({
   declarations: [
@@ -41,10 +41,10 @@ import { AboutContentComponent } from './components/about/about/about-content/ab
     ContactComponent,
     HomepageComponent,
     AboutComponent,
-    ProjectsComponent,
     ProjectComponent,
     PageNotFoundComponent,
     AboutContentComponent,
+    ProjectListComponent,
   ],
   imports: [
     BrowserModule,

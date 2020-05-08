@@ -2,10 +2,17 @@
   <div class="main__container container">
     <section class="main__column column">
       <h2>Hello there.</h2>
-      <p>I'm Rebecca, and I am currently a front end web developer with about 1 year of professional
+      <h3>I'm Rebecca...</h3>
+      <p>...and I am a front end web developer with about 1 year of professional
         experience improving consumer-facing and company-wide websites by implementing user-friendly and
         responsive UIs. In addition to my experience as a web developer, I also spent 8 years of my
         professional career doing project management, SEO, and social media management.</p>
+      <p>Before I became a web dev a year ago, I dabbled in creating my own little websites at home, dreaming I'd be
+        able to make my way into developing. I was fortunate enough to have a job where I was able to move from being a
+        Solutions Analyst already working with a web team, to being a front-end developer on the team after inquiring
+        about an open position and showcasing my HTML/CSS skills in a small, timed project.</p>
+      <p>Since then, I've been working on learning Javascript and Angular through personal projects as well as work
+        projects, which has definitely been a challenge.</p>
       <div class="skill-icons">
         <ion-icon name="logo-html5"></ion-icon>
         <ion-icon name="logo-css3"></ion-icon>
@@ -18,22 +25,10 @@
         <div class="main__row-text">
           <h2>Skills</h2>
         </div>
-        <div class="main__row-skills">
-          <h3>HTML</h3>
+        <div class="main__row-skills" *ngFor="let skill of skills">
+          <h3>{{skill.title}}</h3>
           <div class="main__skill">
-            <p class="skill">Content</p>
-          </div>
-          <h3>CSS</h3>
-          <div class="main__skill">
-            <p class="skill">Content</p>
-          </div>
-          <h3>JavaScript</h3>
-          <div class="main__skill">
-            <p class="skill">Content</p>
-          </div>
-          <h3>Angular</h3>
-          <div class="main__skill">
-            <p class="skill">Content</p>
+            <p class="skill">{{skill.content}}</p>
           </div>
         </div>
       </div>

@@ -1,28 +1,13 @@
-<section class="interests section">
-  <div class="interests__container container">
-      <div class="interests__row">
-          <div class="interests__row-column row-column">
-              <div class="interests__column column">
-                  <ion-icon name="code-slash-sharp" class="light"></ion-icon>
-                  <h3 class="light-heading">Front End Developer</h3>
-                  <p class="light">I implement user-friendly, responsive web designs and updates to company and
-                      consumer-facing websites.</p>
-              </div>
-              <div class="interests__column column">
-                  <ion-icon name="desktop-sharp" class="light"></ion-icon>
-                  <h3 class="light-heading">Solutions Analyst</h3>
-                  <p class="light">I performed daily website maintenance tasks and provided support to
-                      stakeholders for existing websites and applications.I also evaluated, tested and recommended
-                      new opportunities for enhancing our software, hardware and IT processes.</p>
-              </div>
-              <div class="interests__column column">
-                  <ion-icon name="globe-sharp" class="light"></ion-icon>
-                  <h3 class="light-heading">SEO Specialist</h3>
-                  <p class="light">I implemented content and increased the overall ecommerce conversion rate by
-                      75% in a year, increased social conversions and created and optimized site and blog content.
-                  </p>
-              </div>
-          </div>
+<section class="titles section">
+  <div class="titles__container container">
+    <div class="titles__row">
+      <div class="titles__row-column row-column">
+        <div class="titles__column column" *ngFor="let jobs of jobTitles">
+          <ion-icon name="{{jobs.icon}}" class="light"></ion-icon>
+          <h3 class="light-heading">{{jobs.jobTitle}}</h3>
+          <p class="light">{{jobs.jobDesc}}</p>
+        </div>
       </div>
+    </div>
   </div>
 </section>

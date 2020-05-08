@@ -1,0 +1,36 @@
+.project {
+  max-width: 325px;
+  margin: 0 1em;
+  @media only screen and (max-width: 1151px) {
+    margin-bottom: 1em;
+  }
+}
+
+.mat-card-image {
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.button {
+  border-radius: .3em;
+  border: 2px solid var(--purple);
+  color: var(--purple);
+  width: 45%;
+  font-size: .8em;
+  height: 2.4em;
+  &:active {
+    border: 2px solid var(--purple);
+    background: var(--purple);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+  }
+  &:hover {
+    background: var(--purple);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+h2 {
+  text-align: center;
+}
