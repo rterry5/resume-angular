@@ -1,15 +1,14 @@
 .header {
-  background-image: url("https://github.com/rterry5/portfolio/blob/master/images/mug-camera-computer.jpg?raw=true");
+  background-image: url('src/assets/images/coffee-earbuds-laptop.jpg');
   min-height: 70vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   align-items: center;
-  display: flex;
-  @media only screen and (max-width: 808px) {
+  @media only screen and (max-width: 556px) {
     min-height: 40vh;
-    background-position: left;
+    background-image: linear-gradient(to top, #6a11cb 0%, #0ccf9f 100%);
   }
   &__container {
     width: 100%;

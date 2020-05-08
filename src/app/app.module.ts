@@ -12,7 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
-import { MatGridListModule } from '@angular/material/grid-list'
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatTabsModule } from '@angular/material/tabs';
 import { AboutComponent } from './components/about/about/about.component';
 import { ProjectComponent } from './components/project-list/project-list/project/project.component';
 
@@ -60,7 +61,8 @@ import { ProjectListComponent } from './components/project-list/project-list/pro
     MatToolbarModule,
     MatExpansionModule,
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

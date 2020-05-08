@@ -1,3 +1,4 @@
+import { Interest } from './../../../../domain/interest';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-content.component.scss'],
 })
 export class AboutContentComponent implements OnInit {
+  interests: Interest[] = [
+    new Interest(
+      'Interests', 'Content about my interests'),
+    new Interest(
+      'Interests', 'Content about my interests'),
+    new Interest(
+      'Interests', 'Content about my interests'),
+  ];
+
   constructor() {}
 
   ngOnInit() {}
