@@ -16,7 +16,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AboutComponent } from './components/about/about/about.component';
 import { ProjectComponent } from './components/project-list/project-list/project/project.component';
-
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { IntroComponent} from './components/homepage/homepage/intro/intro.component';
@@ -29,6 +28,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutContentComponent } from './components/about/about/about-content/about-content.component';
 import { ProjectListComponent } from './components/project-list/project-list/project-list.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireMessagingModule } from '@angular/fire/messaging';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireFunctionsModule } from '@angular/fire/functions';
 
 @NgModule({
   declarations: [
@@ -62,7 +68,14 @@ import { ProjectListComponent } from './components/project-list/project-list/pro
     MatExpansionModule,
     MatIconModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    AngularFireModule,
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
+    AngularFireMessagingModule,
+    AngularFireDatabaseModule,
+    AngularFireFunctionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

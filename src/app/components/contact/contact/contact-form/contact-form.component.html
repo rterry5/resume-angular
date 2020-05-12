@@ -12,7 +12,8 @@
         appearance="fill"
         required
         maxlength="50"
-        #email="ngModel">
+        #email="ngModel"
+        id="email">
         <mat-hint align="end">{{email.value?.length || 0}}/50</mat-hint>
       <mat-error *ngIf="emailFormControl.hasError('required')">
         Email is <strong>required</strong>
@@ -29,7 +30,8 @@
         placeholder="Ex. I'd love to hear more about you!"
         required
         maxlength="200"
-        #content="ngModel">
+        #content="ngModel"
+        id="content">
       </textarea>
       <mat-hint align="end">{{content.value?.length || 0}}/200</mat-hint>
       <mat-error *ngIf="messageFormControl.hasError('required')">

@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "portfolio-6e93a"
+  },
+  "targets": {
+    "portfolio-6e93a": {
+      "hosting": {
+        "resume-app": [
+          "portfolio-6e93a"
+        ]
+      }
+    }
   }
 }
