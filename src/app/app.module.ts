@@ -16,7 +16,6 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTabsModule } from '@angular/material/tabs';
 import { AboutComponent } from './components/about/about/about.component';
 import { ProjectComponent } from './components/project-list/project-list/project/project.component';
-
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { IntroComponent} from './components/homepage/homepage/intro/intro.component';
@@ -62,7 +61,8 @@ import { ProjectListComponent } from './components/project-list/project-list/pro
     MatExpansionModule,
     MatIconModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

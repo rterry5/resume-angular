@@ -1,7 +1,6 @@
 import { Submission } from './../../../../domain/submission';
-import { HttpService } from './../../../../services/http.service';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import {FormControl, FormGroupDirective, NgForm, Validators} from '@angular/forms';
+import {FormControl, NgForm, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -22,10 +21,10 @@ export class ContactFormComponent implements OnInit {
     Validators.required
   ]);
 
-  constructor(private httpService: HttpService) { }
+  constructor() { }
 
   ngOnInit() {
-    this.httpService.getSubmittedForms();
+
   }
 
   onSubmitForm(form: NgForm) {
