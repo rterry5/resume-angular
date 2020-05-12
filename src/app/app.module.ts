@@ -28,13 +28,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AboutContentComponent } from './components/about/about/about-content/about-content.component';
 import { ProjectListComponent } from './components/project-list/project-list/project-list.component';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
-import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AngularFireMessagingModule } from '@angular/fire/messaging';
-import { AngularFireDatabaseModule } from '@angular/fire/database';
-import { AngularFireFunctionsModule } from '@angular/fire/functions';
 
 @NgModule({
   declarations: [
@@ -69,13 +62,6 @@ import { AngularFireFunctionsModule } from '@angular/fire/functions';
     MatIconModule,
     MatGridListModule,
     MatTabsModule,
-    AngularFireModule,
-    AngularFirestoreModule,
-    AngularFireStorageModule,
-    AngularFireAuthModule,
-    AngularFireMessagingModule,
-    AngularFireDatabaseModule,
-    AngularFireFunctionsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

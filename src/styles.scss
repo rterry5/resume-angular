@@ -1,8 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans|Raleway&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap');
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
 
 :root {
   --dark: #020511;
@@ -25,31 +26,31 @@
     padding: 0;
   }
   h1 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 4em;
     color: var(--dark-gray);
     margin: 0;
   }
   h2 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2em;
     color: var(--dark-gray);
   }
 
   h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
     color: var(--dark-gray);
   }
 
   h4 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1em;
     color: var(--dark-gray);
   }
 
   h5 {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     color: var(--aqua-blue);
     font-size: 0.8em;
@@ -69,6 +70,15 @@
   .light {
     color: var(--light-gray);
   }
+}
+
+.mat-card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.mat-card {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .button {
@@ -109,7 +119,7 @@
   display: flex;
   padding: 5em 0;
   margin: auto;
-  
+
 }
 
 .container {
