@@ -31,6 +31,13 @@ export class ProjectComponent implements OnInit {
       'Of course, this is the website you are currently on. I am working on creating more projects to stick here!',
       'https://rebeccaterry.dev/'
     ),
+    new Project(
+      'Tip Calculator',
+      'HTML, CSS, JavaScript',
+      'assets/images/projects/tip-calculator.png',
+      'For practice purposes I created a tip calculator and plan on adding more features.',
+      'https://rterry5.github.io/tip-calculator/'
+    ),
   ];
 
   constructor() {}

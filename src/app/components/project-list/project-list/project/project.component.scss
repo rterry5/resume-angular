@@ -1,6 +1,6 @@
 .project {
   max-width: 325px;
-  margin: 0 1em;
+  margin: 1em;
   @media only screen and (max-width: 1151px) {
     margin-bottom: 1em;
   }
@@ -12,7 +12,7 @@
 
 .mat-card-image {
   max-height: 350px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .button {
