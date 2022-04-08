@@ -1,5 +1,5 @@
 .header {
-  background-image: url('src/assets/images/coffee-earbuds-laptop.jpg');
+  background-image: url('src/assets/images/keyboard-01.jpg');
   min-height: 70vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -7,8 +7,7 @@
   background-size: cover;
   align-items: center;
   @media only screen and (max-width: 556px) {
-    background-image: none;
-    background-color: var(--white);
+    background-attachment: scroll;
   }
   &__container {
     width: 100%;
@@ -16,7 +15,13 @@
 
   &__content {
     font-size: 1.25em;
-    color: var(--gray);
+    color: var(--light-gray);
     margin: 0 0 1em 0;
+  }
+  h1 {
+    color: var(--white);
+    @media only screen and (max-width: 556px) {
+      font-size: 2em;
+    }
   }
 }

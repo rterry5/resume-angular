@@ -13,6 +13,7 @@
   --aqua-blue: #0ccf9f;
   --hot-pink: #fc466b;
   --purple: #6a11cb;
+  --light-purple: #9350dc;
   --white: #e9e9e9;
   --gray: #656565;
   --light-gray: #c7c7c7;
@@ -92,11 +93,12 @@
   font-weight: bold;
   height: 3em;
   width: 225px;
-  color: var(--medium-blue);
+  color: var(--white);
   text-align: center;
   text-overflow: clip;
   letter-spacing: 1px;
-  background: rgba(0, 0, 0, 0);
+  background: var(--medium-blue);
+  outline: none;
   transition: background-color 0.3s cubic-bezier(0, 0, 0, 0),
     color 0.3s cubic-bezier(0, 0, 0, 0), width 0.3s cubic-bezier(0, 0, 0, 0),
     border-width 0.3s cubic-bezier(0, 0, 0, 0),
@@ -111,7 +113,8 @@
   }
   &:hover {
     color: rgba(255, 255, 255, 1);
-    background: var(--medium-blue);
+    background: var(--light-blue);
+    border: 2px solid var(--light-blue);
   }
 }
 
