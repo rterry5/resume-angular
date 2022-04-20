@@ -10,8 +10,15 @@ import { Project } from 'src/app/domain/project';
 export class ProjectComponent implements OnInit {
   projects: Project[] = [
     new Project(
+      'Cocktail Search',
+      'Angular, Typescript, HTML, SCSS',
+      'assets/images/projects/cocktails.png',
+      'Search for cocktails by name. If you\'re not sure what to search, roll the cocktail dice for a random recipe.',
+      'https://rterry5.github.io/cocktails/'
+    ),
+    new Project(
       'Pokédex',
-      'HTML, SCSS, Angular, Javascript',
+      'Angular, Typescript, HTML, SCSS',
       'assets/images/projects/pokedex.png',
       'Currently adding new features little by little, I started creating a Pokédex to take a deeper dive into Angular and working with APIs and dynamic data',
       'https://rterry5.github.io/pokedex/'
